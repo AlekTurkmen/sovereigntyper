@@ -3,6 +3,10 @@
 import { useState, useEffect, useRef } from "react";
 import { cn } from "@/lib/utils";
 import { quotes, Quote } from "@/lib/quotes";
+import Footer from "./Footer";
+import { Button } from "./ui/button";
+import GameHistory from "./GameHistory";
+import { addGameToHistory } from "@/lib/gameHistory";
 
 export default function TypingGame() {
   const [currentQuote, setCurrentQuote] = useState<Quote | null>(null);
@@ -76,7 +80,19 @@ export default function TypingGame() {
 
   // Handle key presses
   const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
-    if (!currentQuote || charIndex >= currentQuote.text.length || e.ctrlKey || e.altKey || e.metaKey) {
+    if (!currentQuote || charIndex >= currentQuote.text.length || e.altKey || e.metaKey) {
+      return;
+    }
+    
+    // Handle Ctrl+C to instantly finish the typing game
+    if (e.ctrlKey && e.key === "c") {
+      e.preventDefault();
+      // Complete the typing test immediately
+      const now = new Date();
+      setEndTime(now);
+      setCharIndex(currentQuote.text.length);
+      setProgress(100);
+      finishGame(now);
       return;
     }
     
@@ -206,6 +222,13 @@ export default function TypingGame() {
       quoteDisplayRef.current.innerHTML = '';
     }
     
+    // Save game to history
+    addGameToHistory({
+      author: currentQuote.author,
+      wpm: calculatedWpm,
+      accuracy: calculatedAccuracy
+    });
+    
     // Show stats
     setShowStats(true);
   };
@@ -266,63 +289,70 @@ export default function TypingGame() {
           </div>
         </div>
       ) : (
-        <div className="stats-container bg-[#1a1a1a] rounded-lg p-8 shadow-lg border border-[rgba(255,255,255,0.05)]">
-          <h2 className="font-light text-center mb-8 text-3xl text-[#bbb]">Your Results</h2>
-          
-          <div className="flex flex-col md:flex-row gap-8 mb-8">
-            {/* Quote with character accuracy styling */}
-            <div className="w-full p-6 bg-[#121212] rounded-md border border-[#333] flex flex-col">
-              <div className="quote-text text-md leading-relaxed text-[#999] flex-grow">
-                {currentQuote?.text.split('').map((char, i) => (
-                  <span 
-                    key={i} 
-                    className={cn(
-                      typedCharsStatus[i] === 'correct' ? 'char-correct' : 
-                      typedCharsStatus[i] === 'incorrect' ? 'char-incorrect' : ''
-                    )}
-                  >
-                    {char}
-                  </span>
-                ))}
+        <>
+          <div className="stats-container bg-[#1a1a1a] rounded-lg p-8 shadow-lg border border-[rgba(255,255,255,0.05)]">
+            <h2 className="font-light text-center mb-8 text-3xl text-[#bbb]">Results</h2>
+            
+            <div className="mb-8">
+              {/* Quote with character accuracy styling */}
+              <div className="w-full p-6 bg-[#121212] rounded-md border border-[#333] flex flex-col">
+                <div className="quote-text text-xl leading-relaxed text-[#999] flex-grow">
+                  {currentQuote?.text.split('').map((char, i) => (
+                    <span 
+                      key={i} 
+                      className={cn(
+                        typedCharsStatus[i] === 'correct' ? 'char-correct' : 
+                        typedCharsStatus[i] === 'incorrect' ? 'char-incorrect' : ''
+                      )}
+                    >
+                      {char}
+                    </span>
+                  ))}
+                </div>
+                <div className="quote-author text-right mt-4 italic text-[#777]">
+                  — {currentQuote?.author}
+                </div>
               </div>
-              <div className="quote-author text-right mt-4 italic text-[#777]">
-                — {currentQuote?.author}
-              </div>
-            </div>
-          </div>
-          
-          <div className="flex justify-between bg-[#121212] rounded-md border border-[#333] p-6 mb-8">
-            <div className="stat-item">
-              <div className="stat-label text-sm opacity-70 text-[#999]">Your speed:</div>
-              <div className="stat-value text-3xl font-medium text-white">{wpm} wpm</div>
             </div>
             
-            <div className="stat-item">
-              <div className="stat-label text-sm opacity-70 text-[#999]">Time:</div>
-              <div className="stat-value text-3xl font-medium text-white">{typingTime}</div>
+            <div className="flex justify-between bg-[#121212] rounded-md border border-[#333] p-6 mb-8">
+              <div className="stat-item">
+                <div className="stat-label text-sm opacity-70 text-[#999]">Speed:</div>
+                <div className="stat-value text-3xl font-medium text-white">{wpm} wpm</div>
+              </div>
+              
+              <div className="stat-item">
+                <div className="stat-label text-sm opacity-70 text-[#999]">Time:</div>
+                <div className="stat-value text-3xl font-medium text-white">{typingTime}</div>
+              </div>
+              
+              <div className="stat-item">
+                <div className="stat-label text-sm opacity-70 text-[#999]">Accuracy:</div>
+                <div className="stat-value text-3xl font-medium text-white">{accuracy}%</div>
+              </div>
             </div>
             
-            <div className="stat-item">
-              <div className="stat-label text-sm opacity-70 text-[#999]">Accuracy:</div>
-              <div className="stat-value text-3xl font-medium text-white">{accuracy}%</div>
+            <div className="flex justify-center gap-4">
+              <Button 
+                variant="outline"
+                className="bg-[#1a1a1a] hover:bg-[#252525] text-white border-[#444] hover:border-[#666]"
+                onClick={goHome}
+              >
+                Home
+              </Button>
+              <Button 
+                variant="outline"
+                className="bg-[#1a1a1a] hover:bg-[#252525] text-white border-[#444] hover:border-[#666]"
+                onClick={startGame}
+              >
+                Type Again
+              </Button>
             </div>
           </div>
           
-          <div className="flex justify-center gap-4">
-            <button 
-              className="home-button bg-[#1a1a1a] text-white border border-[#444] py-3 px-6 text-base cursor-pointer rounded-md transition-all duration-300 ease-in-out hover:bg-[#252525]"
-              onClick={goHome}
-            >
-              Home
-            </button>
-            <button 
-              className="restart-button bg-[#1a1a1a] text-white border border-[#444] py-3 px-6 text-base cursor-pointer rounded-md transition-all duration-300 ease-in-out hover:bg-[#252525]"
-              onClick={startGame}
-            >
-              Type Again
-            </button>
-          </div>
-        </div>
+          {/* Game History as floating component */}
+          <GameHistory showHistory={showStats} />
+        </>
       )}
       
       <style jsx>{`
@@ -344,9 +374,7 @@ export default function TypingGame() {
         }
       `}</style>
       
-      <footer className="mt-12 mb-4 text-sm opacity-50 text-[#777] text-center fixed bottom-0 left-0 right-0">
-        Alek Turkmen &copy; 2025
-      </footer>
+      <Footer />
     </div>
   );
 } 
