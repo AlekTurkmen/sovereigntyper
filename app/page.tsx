@@ -2,6 +2,7 @@
 
 import { BackgroundGradientAnimation } from "@/components/ui/background-gradient-animation";
 import { useState, useEffect } from "react";
+import TypingGame from "@/components/TypingGame";
 
 export default function Home() {
   const [isTypingMode, setIsTypingMode] = useState(false);
@@ -27,7 +28,9 @@ export default function Home() {
   if (isTypingMode) {
     return (
       <BackgroundGradientAnimation interactive={false}>
-        <div className="h-screen w-screen" />
+        <div className="h-screen w-screen flex items-center justify-center">
+          <TypingGame />
+        </div>
       </BackgroundGradientAnimation>
     );
   }
@@ -40,6 +43,11 @@ export default function Home() {
         </p>
         <p className="font-['Lexend'] text-gray-400 mt-4 text-sm md:text-base">
           Press enter to get started
+        </p>
+      </div>
+      <div className="absolute bottom-0 left-0 right-0 p-4 text-center">
+        <p className="text-sm opacity-50 text-gray-400">
+          Alek Turkmen &copy; 2025
         </p>
       </div>
     </BackgroundGradientAnimation>
