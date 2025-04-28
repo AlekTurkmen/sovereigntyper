@@ -111,7 +111,10 @@ export default function TypingGame() {
     if (e.key.length === 1 || e.key === 'Space' || e.key === 'Backspace') {
       const pressedKey = e.key === 'Space' ? ' ' : e.key;
       
-      if (pressedKey === expectedKey) {
+      // Special case for handling various dash characters
+      const isDashMatch = (pressedKey === '-' && (expectedKey === '–' || expectedKey === '—' || expectedKey === '-'));
+      
+      if (pressedKey === expectedKey || isDashMatch) {
         // Correct key
         allCharacters[charIndex].style.color = 'rgba(144, 238, 144, 0.7)'; // Light green
         allCharacters[charIndex].classList.remove('current-char');
@@ -345,7 +348,7 @@ export default function TypingGame() {
                 className="bg-[#1a1a1a] hover:bg-[#252525] text-white border-[#444] hover:border-[#666]"
                 onClick={startGame}
               >
-                Type Again
+                Again
               </Button>
             </div>
           </div>

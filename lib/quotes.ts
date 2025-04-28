@@ -26,10 +26,6 @@ export const quotes: Quote[] =
     author: "Nelson Mandela"
   },
   {
-    text: "Seven Steps to Success 1) Make a commitment to grow daily. 2) Value the process more than events. 3) Don't wait for inspiration. 4) Be willing to sacrifice pleasure for opportunity. 5) Dream big. 6) Plan your priorities. 7) Give up to go up.",
-    author: "John C. Maxwell"
-  },
-  {
     text: "I firmly believe that any man's finest hour, the greatest fulfillment of all that he holds dear, is that moment when he has worked his heart out in a good cause and lies exhausted on the field of battle – victorious.",
     author: "Vince Lombardi"
   },
@@ -38,60 +34,24 @@ export const quotes: Quote[] =
     author: "Eric Thomas"
   },
   {
-    text: "Our actions may be impeded... but there can be no impeding our intentions or dispositions. Because we can accommodate and adapt. The mind adapts and converts to its own purposes the obstacle to our acting.",
-    author: "Marcus Aurelius"
-  },
-  {
-    text: "Do you know the hallmark of a second rater? It's resentment of another man's achievement. Those touchy mediocrities who sit trembling lest someone's work prove greater than their own have no inkling of the loneliness that comes when you reach the top, the loneliness for an equal—for a mind to respect and an achievement to admire.",
-    author: "Ayn Rand"
-  },
-  {
-    text: "We choose to go to the moon in this decade and do the other things, not because they are easy, but because they are hard, because that goal will serve to organize and measure the best of our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to postpone, and one which we intend to win.",
-    author: "John F. Kennedy"
-  },
-  {
     text: "The most difficult thing is the decision to act, the rest is merely tenacity. The fears are paper tigers. You can do anything you decide to do. You can act to change and control your life; and the procedure, the process is its own reward.",
     author: "Amelia Earhart"
-  },
-  {
-    text: "Helen Keller became deaf, dumb, and blind shortly after birth. Despite her greatest misfortune, she has written her name indelibly in the pages of the history of the great. Her entire life has served as evidence that no one is ever defeated until defeat has been accepted as reality.",
-    author: "Napoleon Hill"
   },
   {
     text: "To remain stagnant is a waste since movement is essential to achievement. Those consumed with the barriers of “what if’s” will avoid perceived risks and lean on excuses for inaction. Excuses keep those that are afraid of change from progressing.",
     author: "C. Toni Graham"
   },
   {
-    text: "Don't aim at success. The more you aim at it and make it a target, the more you are going to miss it. For success, like happiness, cannot be pursued; it must ensue, and it only does so as the unintended side effect of one's personal dedication to a cause greater than oneself or as the by-product of one's surrender to a person other than oneself. Happiness must happen, and the same holds for success: you have to let it happen by not caring about it.",
-    author: "Viktor Frankl"
-  },
-  {
     text: "Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do. If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it. And, like any great relationship, it just gets better and better as the years roll on.",
     author: "Steve Jobs"
-  },
-  {
-    text: "She could not descend to an existence where her brain would explode under the pressure of forcing itself not to outdistance incompetence. She could not function to the rule of: Pipe down—keep down—slow down—don't do your best, it is not wanted!",
-    author: "Ayn Rand"
   },
   {
     text: "The credit belongs to the man who is actually in the arena, whose face is marred by dust and sweat and blood; who strives valiantly; who errs, who comes short again and again, because there is no effort without error; but who does actually strive to do the deeds; who knows great enthusiasms, the great devotions, and spends himself in a worthy cause.",
     author: "Theodore Roosevelt"
   },
   {
-    text: "We shall go on to the end; we shall fight in France, we shall fight on the seas and oceans, we shall fight with growing confidence and growing strength in the air, we shall defend our island, whatever the cost may be; we shall fight on the beaches, we shall fight on the landing grounds, we shall fight in the fields and in the streets, we shall fight in the hills; we shall never surrender.",
-    author: "Winston Churchill"
-  },
-  {
     text: "The knowledge that you have emerged wiser and stronger from setbacks means that you are, ever after, secure in your ability to survive. You will never truly know yourself, or the strength of your relationships, until both have been tested by adversity. Such knowledge is a true gift, for all that it is painfully won, and it has been worth more than any qualification I ever earned.",
     author: "J.K. Rowling"
-  },
-  {
-    text: "Too much sleep is not good for your dreams. It delays the manifestation of your dreams and makes it harder for them to be achieved. See adequate sleep as a means of rejuvenation and revitalization so you can accomplish remarkable feats. Strive for balance, as it is in the synergy of rest and activity, that your true potential is unleashed.",
-    author: "Gift Gugu Mona"
-  },
-  {
-    text: "Nothing comes as an accomplishment instantly. Success does not come overnight. Patience is the key! Grow up and be the tree; but remember it takes dry and wet seasons to become a fruit bearer, achiever and impact maker!",
-    author: "Israelmore Ayivor"
   },
   {
     text: "In a sense, people are our proper occupation. Our job is to do them good and put up with them. But when they obstruct our proper tasks, they become irrelevant to us—like sun, wind, animals. Our actions may be impeded by them, but there can be no impeding our intentions or our dispositions. Because we can accommodate and adapt. The mind adapts and converts to its own purposes the obstacle to our acting. The impediment to action advances action. What stands in the way becomes the way.",
@@ -108,14 +68,6 @@ export const quotes: Quote[] =
   {
     text: "Rather, it has been the risk-takers, the doers, the makers of things—some celebrated, but more often men and women obscure in their labor—who have carried us up the long rugged path toward prosperity and freedom.",
     author: "Barack Obama"
-  },
-  {
-    text: "I learned this, at least, by my experiment: that if one advances confidently in the direction of his dreams, and endeavors to live the life which he has imagined, he will meet with a success unexpected in common hours.",
-    author: "Henry David Thoreau"
-  },
-  {
-    text: "You may encounter many defeats, but you must not be defeated. In fact, it may be necessary to encounter the defeats, so you can know who you are, what you can rise from, how you can still come out of it.",
-    author: "Maya Angelou"
   },
   {
     text: "It’s a lot more than mind over matter. It takes relentless self-discipline to schedule suffering into your day, every day, but if you do, you’ll find that at the other end of that suffering is a whole other life just waiting for you.",
@@ -146,18 +98,6 @@ export const quotes: Quote[] =
     author: "Albert Einstein"
   },
   {
-    text: "It doesn't matter how far you might rise. At some point you are bound to stumble, because if you're constantly raising the bar and pushing yourself higher and higher, the law of averages predicts that you will eventually fall. And when you do, remember this: there is no such thing as failure—failure is just life trying to move us in another direction.",
-    author: "Oprah Winfrey"
-  },
-  {
-    text: "I've come to believe that each of us has a personal calling that's as unique as a fingerprint—and that the best way to succeed is to discover what you love and then find a way to offer it to others in the form of service, working hard, and also allowing the energy of the universe to lead you.",
-    author: "Oprah Winfrey"
-  },
-  {
-    text: "Courage is the most important of all the virtues, because without courage you can't practice any other virtue consistently. You can practice any virtue erratically, but nothing consistently without courage.",
-    author: "Maya Angelou"
-  },
-  {
     text: "You will encounter issues you didn’t expect, step on landmines. It’s bad. Years two to four or five are usually quite difficult. A friend has a saying, it’s ‘eating glass and staring into the abyss.’ If you’re a co-founder or CEO, you have to do all kinds of tasks you might not want to do. If you don't do your chores, the company won't succeed; no task is too menial.",
     author: "Elon Musk"
   },
@@ -166,36 +106,12 @@ export const quotes: Quote[] =
     author: "Elon Musk"
   },
   {
-    text: "Winning is not a sometime thing; it's an all the time thing. You don't win once in a while; you don't do things right once in a while; you do them right all the time. Winning is a habit. Unfortunately, so is losing.",
-    author: "Vince Lombardi"
-  },
-  {
-    text: "The only place success comes before work is in the dictionary. The difference between a successful person and others is not a lack of strength, not a lack of knowledge, but a lack of will. Once you learn to quit, it becomes a habit; so press on even when days are hardest.",
-    author: "Vince Lombardi"
-  },
-  {
     text: "I've missed more than 9,000 shots in my career. I've lost almost 300 games. Twenty-six times I've been trusted to take the game-winning shot and missed. I've failed over and over and over again in my life. And that is why I succeed.",
     author: "Michael Jordan"
   },
   {
     text: "Some people want it to happen, some wish it would happen, others make it happen. I can accept failure—everyone fails at something—but I can't accept not trying. To learn to succeed, you must first learn to fail; once you do that, you'll never fear losing.",
     author: "Michael Jordan"
-  },
-  {
-    text: "Luck has nothing to do with it, because I have spent many, many hours—countless hours—on the court working for my one moment in time, not knowing when it would come. I really think a champion is defined not by their wins but by how they can recover when they fall and come back stronger each time.",
-    author: "Serena Williams"
-  },
-  {
-    text: "I really think a champion is defined not by their wins but by how they can recover when they fall. Everyone's dream can come true if you just stick to it and work hard; with sacrifice and dedication, anything is possible on any court of life.",
-    author: "Serena Williams"
-  },
-  {
-    text: "Beliefs have the power to create and the power to destroy. Human beings have the awesome ability to take any experience of their lives and create a meaning that disempowers them or one that can literally save their lives.",
-    author: "Tony Robbins"
-  },
-  {
-    text: "We can change our lives—we can do, have, and be exactly what we wish. It is in your moments of decision that your destiny is shaped, because the decisions you make today determine the stories you will tell tomorrow. When you want to take the island, burn your boats and commit every fiber of your being to turning the invisible into the visible.",
-    author: "Tony Robbins"
   },
   {
     text: "Keep this constantly in mind. Weak desires bring weak results, just as a small amount of fire makes a small amount of heat. When your desires are strong enough, you will appear to possess superhuman powers to achieve.",
@@ -222,20 +138,8 @@ export const quotes: Quote[] =
     author: "Theodore Roosevelt"
   },
   {
-    text: "The whole secret of a successful life is to find out what it is one's destiny to do—and then do it. Obstacles are those frightful things you see when you take your eyes off your goals, so keep your vision fixed on the horizon and let every problem become a stepping-stone toward the work you are here on earth to accomplish.",
-    author: "Henry Ford"
-  },
-  {
     text: "Here's to the crazy ones—the misfits, the rebels, the troublemakers, the round pegs in the square holes. The ones who see things differently. While some may see them as the crazy ones, we see genius, because the people who are crazy enough to think they can change the world are the ones who actually do.",
     author: "Steve Jobs"
-  },
-  {
-    text: "Do what you have to do until you can do what you want to do. The big secret in life is that there is no secret; whether your goals are large or small, you can get there if you're willing to work. Align intention with action, and you turn wishes into something solid and real.",
-    author: "Oprah Winfrey"
-  },
-  {
-    text: "Identify your problems, but give your power and energy to solutions. The only limit to your impact is your imagination and commitment; if you talk about it, it's a dream, if you envision it, it's possible, but when you schedule it, it's real.",
-    author: "Tony Robbins"
   },
   {
     text: "Say to yourself in the early morning: I shall meet today ungrateful, violent, treacherous, envious, uncharitable men; all of these have come upon them through ignorance of real good and ill. But I, who have seen the nature of the good, know that none of them can hurt me. ",
@@ -302,14 +206,6 @@ export const quotes: Quote[] =
     author: "Viktor Frankl"
   },
   {
-    text: "You must never confuse faith that you will prevail in the end—which you can never afford to lose—with the discipline to confront the most brutal facts of your current reality, whatever they might be. That is the essence of Stoic resilience. ",
-    author: "James Stockdale"
-  },
-  {
-    text: "After I ejected from my burning jet and had thirty seconds of freedom left, I whispered to myself: “Five years down there, at least. I’m leaving the world of technology and entering the world of Epictetus.” That resolve—to meet captivity with Stoic discipline—became the compass that guided me through seven brutal years as a prisoner of war. ",
-    author: "James Stockdale"
-  },
-  {
     text: "Discipline is the soul of an army. It makes small numbers formidable, procures success to the weak, and esteem to all. When men are trained to obey even in the toughest moments, they become instruments of order and guardians of the republic’s liberty. ",
     author: "George Washington"
   },
@@ -318,16 +214,8 @@ export const quotes: Quote[] =
     author: "George Washington"
   },
   {
-    text: "Nothing can stop the man with the right mental attitude from achieving his goal; nothing on earth can help the man with the wrong mental attitude. Success begins in the mind, for our inner posture shapes destiny more than circumstance ever could. ",
-    author: "Thomas Jefferson"
-  },
-  {
     text: "The obstacle in the path becomes the path. Within every impediment lies an opportunity to practice virtue and gain strength. What stands in the way, properly faced, becomes the way forward. ",
     author: "Ryan Holiday"
-  },
-  {
-    text: "The most famous philosopher-king in history was not attempting to suppress emotions but rather to question them when they take a disruptive form; Stoic training aims to shift our emotional spectrum from negative passions like fear and anger to positive ones such as love, joy, and a sense of justice. ",
-    author: "Massimo Pigliucci"
   },
   {
     text: "What we fear doing most is usually what we most need to do. Define the worst-case scenario, accept that it could happen, and then take action anyway; on the far side of that fear lies the progress and freedom that routine comfort will always deny us. ",
@@ -360,10 +248,6 @@ export const quotes: Quote[] =
   {
     text: "Wind extinguishes a candle and energizes fire. Likewise with randomness, uncertainty, and chaos: you want to use them, not hide from them—be the fire and wish for the wind so that volatility becomes fuel for growth rather than the force of destruction.",
     author: "Nassim Nicholas Taleb"
-  },
-  {
-    text: "Stoicism teaches us to distinguish more clearly between aspects of our lives that are under our direct control and aspects that are not-training ourselves each day to take responsibility for our own actions while accepting with equanimity events outside our sphere of influence. ",
-    author: "Donald Robertson"
   },
   {
     text: "Men seek retreats for themselves—houses in the country, at the shore, in the mountains—yet whenever you wish, you can retreat into yourself. Do not act as if you were going to live ten thousand years; death hangs over you. While you live, while it is in your power, be good. ",
@@ -414,10 +298,6 @@ export const quotes: Quote[] =
     author: "Sergey Brin"
   },
   {
-    text: "Screw it, let’s do it. When you seize an opportunity before every detail is perfect, you unleash creativity, test ideas fast, and discover possibilities that caution would have left unseen.",
-    author: "Richard Branson"
-  },
-  {
     text: "Embrace what you don’t know, especially in the beginning, because what you don’t know can become your greatest asset. It ensures that you will absolutely be doing things differently from everybody else.",
     author: "Sara Blakely"
   },
@@ -430,15 +310,19 @@ export const quotes: Quote[] =
     author: "Howard Schultz"
   },
   {
-    text: "Leadership is hard to define and good leadership even harder. But if you can get people to follow you to the ends of the earth, you are a great leader—one who marries integrity to a compelling mission.",
-    author: "Indra Nooyi"
-  },
-  {
     text: "If you want to create and capture lasting value, don’t build an undifferentiated commodity business; competition is for losers. The road to monopoly runs through solving a unique problem better than anyone else.",
     author: "Peter Thiel"
   },
   {
     text: "Fearlessness is like a muscle. I know from my own life that the more I exercise it, the more natural it becomes not to let my fears run me. Each small act of courage builds the habit of daring greatly.",
     author: "Arianna Huffington"
+  },
+  {
+    text: "You sensed that you should be following a different path, a more ambitious one, you felt that you were destined for other things but you had no idea how to achieve them and in your misery you began to hate everything around you.",
+    author: "Fyodor Dostoyevsky"
+  },
+  {
+    text: "He who jumps into the void owes no explanation to those who stand and watch.",
+    author: "Jean-Luc Godard"
   }
 ]; 
